@@ -36,7 +36,7 @@ along with the Robotics Library. If not, see <http://www.gnu.org/licenses/>. */
 #define Rs_pin			0
 #define Rw_pin			1
 #define En_pin			2
-#define BACKLIGHT_PIN	3 
+#define BACKLIGHT_PIN		3 
 #define D4_pin			4
 #define D5_pin			5
 #define D6_pin			6
@@ -47,8 +47,8 @@ along with the Robotics Library. If not, see <http://www.gnu.org/licenses/>. */
 // LCD-specific flags
 
 #define LED_FRAME_DELAY			3000 
-#define LED_OFF					0
-#define LED_ON					1
+#define LED_OFF				0
+#define LED_ON				1
 #define LED_CHARS_PER_LINE		16
 #define LED_NUM_LINES			2
 
@@ -61,20 +61,27 @@ along with the Robotics Library. If not, see <http://www.gnu.org/licenses/>. */
 #define MOTOR_TWO_REV		10	// reverse 
 #define MOTOR_ONE_PWM		6	
 #define MOTOR_TWO_PWM		11	
-#define MOTOR_SPEED			255
+#define MOTOR_SPEED		255
 
 //-----------------------------------------------------------------
 // Servo pins and flags
 
 #define SERVO_ATTACH_PIN	2
 #define SERVO_FWD_DEGREES	110
-#define SERVO_RIGHT_DEGREES 35
+#define SERVO_RIGHT_DEGREES	35
 #define SERVO_LEFT_DEGREES	180
 
 //-----------------------------------------------------------------
 // Ultrasonic Sensor pins and flags
 
-#define ULTRA_SONIC_ECHO	12
-#define ULTRA_SONIC_TRIGGER	13
+#define ULTRA_SONIC_ECHO	A1
+#define ULTRA_SONIC_TRIGGER	A0
+
+//-----------------------------------------------------------------
+// Bluetooth Sensor pins and flags
+
+#define BLUETOOTH_RX		1
+#define BLUETOOTH_TX		0
+#define BLUETOOTH_DELAY		3000 // check bluetooth every 3 seconds
 
 #endif // ROBOTICS_CONFIG_H
